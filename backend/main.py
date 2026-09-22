@@ -109,3 +109,9 @@ async def startup_event():
 # DEPLOY COMMAND:
 # pip install fastapi uvicorn httpx beautifulsoup4
 # uvicorn main:app --host 0.0.0.0 --port 8000
+
+# Production entry point
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
