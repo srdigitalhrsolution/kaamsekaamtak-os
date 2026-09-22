@@ -1,0 +1,6 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { font-family: Inter, sans-serif; }
+.sora { font-family: Sora, sans-serif; }
